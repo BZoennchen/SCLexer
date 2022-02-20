@@ -38,7 +38,7 @@ class SCLexer(SuperColliderLexer):
             (r'[{(\[;,]', Punctuation, 'slashstartsregex'),
             (r'[})\].]', Punctuation),
             (words((
-                'for', 'in', 'while', 'do', 'break', 'return', 'continue',
+                'for', '@', '@@', '|@|', '!', 'forBy', 'in', 'while', 'do', 'break', 'return', 'continue',
                 'switch', 'case', 'default', 'if', 'else', 'throw', 'try',
                 'catch', 'finally', 'new', 'delete', 'typeof', 'instanceof',
                 'void'), suffix=r'\b'),
